@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" rowHeight="59" id="KGk-i7-Jjw" customClass="GDWMusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F6Z-X9-KsF" userLabel="歌手头像">
+                        <rect key="frame" x="5" y="5" width="60" height="48.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="G9M-15-X61"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-b9-O7l" userLabel="歌曲名">
+                        <rect key="frame" x="70" y="5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-fk-G9w" userLabel="歌手名">
+                        <rect key="frame" x="70" y="39" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F6Z-X9-KsF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="CCD-TN-T24"/>
+                    <constraint firstAttribute="bottom" secondItem="F6Z-X9-KsF" secondAttribute="bottom" constant="5" id="MNd-7l-nSx"/>
+                    <constraint firstItem="5uB-b9-O7l" firstAttribute="leading" secondItem="F6Z-X9-KsF" secondAttribute="trailing" constant="5" id="UBG-M2-TLs"/>
+                    <constraint firstItem="MWM-fk-G9w" firstAttribute="leading" secondItem="5uB-b9-O7l" secondAttribute="leading" id="cYw-A7-zFD"/>
+                    <constraint firstItem="F6Z-X9-KsF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="k3o-Hz-C3w"/>
+                    <constraint firstItem="5uB-b9-O7l" firstAttribute="top" secondItem="F6Z-X9-KsF" secondAttribute="top" id="qh2-hk-5FY"/>
+                    <constraint firstItem="MWM-fk-G9w" firstAttribute="bottom" secondItem="F6Z-X9-KsF" secondAttribute="bottom" id="yRL-JV-ZOF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="5uB-b9-O7l" id="0fj-xh-x45"/>
+                <outlet property="singerIcon" destination="F6Z-X9-KsF" id="7CN-qZ-TPQ"/>
+                <outlet property="singerName" destination="MWM-fk-G9w" id="7He-vc-wCZ"/>
+            </connections>
+            <point key="canvasLocation" x="249.5" y="152.5"/>
+        </tableViewCell>
+    </objects>
+</document>

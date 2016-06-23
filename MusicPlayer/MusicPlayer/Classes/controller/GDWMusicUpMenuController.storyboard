@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wD3-9X-hzk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Music Up Menu Controller-->
+        <scene sceneID="jnR-IT-Xj2">
+            <objects>
+                <viewController id="wD3-9X-hzk" customClass="GDWMusicUpMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yAD-DO-z1R"/>
+                        <viewControllerLayoutGuide type="bottom" id="6tk-Ce-qvO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iIG-Zr-kVI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z2m-78-Qcm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FIF-kK-j37">
+                                <rect key="frame" x="5" y="5" width="365" height="657"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FIF-kK-j37" secondAttribute="trailing" constant="5" id="AoA-BK-OXY"/>
+                            <constraint firstItem="z2m-78-Qcm" firstAttribute="top" secondItem="iIG-Zr-kVI" secondAttribute="top" id="CJU-H2-v5E"/>
+                            <constraint firstAttribute="trailing" secondItem="z2m-78-Qcm" secondAttribute="trailing" id="CeA-Cj-sJt"/>
+                            <constraint firstItem="z2m-78-Qcm" firstAttribute="leading" secondItem="iIG-Zr-kVI" secondAttribute="leading" id="Say-qx-1GK"/>
+                            <constraint firstItem="6tk-Ce-qvO" firstAttribute="top" secondItem="z2m-78-Qcm" secondAttribute="bottom" id="X68-nW-YRJ"/>
+                            <constraint firstItem="FIF-kK-j37" firstAttribute="leading" secondItem="iIG-Zr-kVI" secondAttribute="leading" constant="5" id="YuQ-Tz-0Jn"/>
+                            <constraint firstItem="6tk-Ce-qvO" firstAttribute="top" secondItem="FIF-kK-j37" secondAttribute="bottom" constant="5" id="mkw-lm-ffg"/>
+                            <constraint firstItem="FIF-kK-j37" firstAttribute="top" secondItem="iIG-Zr-kVI" secondAttribute="top" constant="5" id="zz0-1y-eSx"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="musicTableView" destination="FIF-kK-j37" id="Rov-gP-l3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifI-i6-bnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.5" y="271.5"/>
+        </scene>
+    </scenes>
+</document>
